@@ -4,23 +4,23 @@
            rounded>
     <div class="job-history-item-header pa-1 overflow-y-auto">
 
-      <div class="job-history-actions pa-1 float-right">
+      <div class="job-history-actions pa-2 float-right">
         <v-icon v-if="isFavorite" class="job-history-action" :class="{'muted': isHidden}" @click="toggleFavorite( index )">mdi-star</v-icon>
         <v-icon v-if="!isFavorite" class="job-history-action" :class="{'muted': isHidden}" @click="toggleFavorite( index )">mdi-star-outline</v-icon>
         <v-icon class="job-history-action" :class="{'muted': isHidden}" @click="toggleHidden( index )">mdi-close</v-icon>
       </div>
 
-      <span class="job-history-item-org pa-1 font-weight-bold float-right text-uppercase">
+      <span class="job-history-item-org pa-2 font-weight-bold float-right text-uppercase">
         {{ data.details.org }}
       </span>
 
-      <div class="job-history-item-role pa-1 font-weight-bold text-uppercase">
+      <div class="job-history-item-role pa-2 font-weight-bold text-uppercase">
         <v-icon v-if="isExpanded" class="job-history-action" :class="{'muted': isHidden}" @click="toggleExpanded( index )">mdi-minus</v-icon>
         <v-icon v-if="!isExpanded" class="job-history-action" :class="{'muted': isHidden}" @click="toggleExpanded( index )">mdi-plus</v-icon>
         {{ data.details.role }}
       </div>
 
-      <span class="job-history-item-date-range font-weight-bold float-right">
+      <span class="job-history-item-date-range pa-2 font-weight-bold float-right">
         <span class="job-history-item-start">{{ data.details.start }}</span> -
         <span class="job-history-item-start">{{ data.details.end ? data.details.end : 'now' }}</span>
       </span>
@@ -31,11 +31,6 @@
     </div>
 
     <div :hidden="!isExpanded" class="job-not-condensed">
-
-      <span class="job-history-item-description-header ma-1">Description: <br/></span>
-      <div class="job-history-item-description px-4 my-2 font-weight-medium">
-        {{ data.details.description }}
-      </div>
 
       <span class="job-history-item-highlights-header mx-1">Highlights: <br/></span>
       <div class="job-history-item-highlights px-2">
@@ -121,12 +116,16 @@ export default Vue.extend({
 
 .job-history-item-expanded {
 }
+.job-history-item-org {
+  color: var(--v-accent-base);
+}
 .job-history-item-role {
-  background-color: var(--v-primary-base);
+  background-color: var(--v-secondary-base);
+  color: var(--v-accent-base)
 }
 .job-history-action.v-icon {
-  -webkit-text-stroke: 0 var(--v-info-base);
-  -webkit-text-fill-color: var(--v-info-base);
+  -webkit-text-stroke: 0 var(--v-accent-base);
+  -webkit-text-fill-color: var(--v-accent-base);
 }
 
 .job-history-action.v-icon.muted {

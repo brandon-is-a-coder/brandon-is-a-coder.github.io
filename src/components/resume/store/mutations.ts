@@ -21,16 +21,16 @@ export const mutations: MutationTree<State> & Mutations = {
     state.jobhistory = history.slice().sort((a, b) => compareDates(a.details, b.details)).reverse()
   },
   TOGGLE_ITEM_VISIBILITY_EXPANDED (state: State, index: number): void {
-    state.jobhistory[index] = toggleItemVisibilityOption({ ...state.jobhistory[index] }, VisibilityOptions.EXPANDED)
+    state.jobhistory.splice(index, 1, toggleItemVisibilityOption({ ...state.jobhistory[index] }, VisibilityOptions.EXPANDED))
   },
   TOGGLE_ITEM_VISIBILITY_FAVORITE (state: State, index: number): void {
-    state.jobhistory[index] = toggleItemVisibilityOption({ ...state.jobhistory[index] }, VisibilityOptions.FAVORITE)
+    state.jobhistory.splice(index, 1, toggleItemVisibilityOption({ ...state.jobhistory[index] }, VisibilityOptions.FAVORITE))
   },
   TOGGLE_ITEM_VISIBILITY_CONDENSED (state: State, index: number): void {
-    state.jobhistory[index] = toggleItemVisibilityOption({ ...state.jobhistory[index] }, VisibilityOptions.CONDENSED)
+    state.jobhistory.splice(index, 1, toggleItemVisibilityOption({ ...state.jobhistory[index] }, VisibilityOptions.CONDENSED))
   },
   TOGGLE_ITEM_VISIBILITY_HIDDEN (state: State, index: number): void {
-    state.jobhistory[index] = toggleItemVisibilityOption({ ...state.jobhistory[index] }, VisibilityOptions.HIDDEN)
+    state.jobhistory.splice(index, 1, toggleItemVisibilityOption({ ...state.jobhistory[index] }, VisibilityOptions.HIDDEN))
   },
   TOGGLE_ITEMS_COLLAPSE_ALL (state: State): void {
     toggleItemsCollapseAll(state.jobhistory)

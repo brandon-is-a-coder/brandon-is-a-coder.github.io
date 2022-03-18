@@ -61,7 +61,7 @@ export function compareDateStrings (a: string, b: string): number {
   }
 
   // Will also catch when [0] === [0] since it will end up as 0 - 0
-  if ((aDate.length === 1 || bDate.length === 1)) {
+  if (aDate.length === 1 || bDate.length === 1) {
     return (Number(aDate[1] ? aDate[1] : 0) - Number(bDate[1] ? bDate[1] : 0)) * 100
   }
 
@@ -69,6 +69,5 @@ export function compareDateStrings (a: string, b: string): number {
     return Number(aDate[2] ? aDate[2] : 0) - Number(bDate[2] ? bDate[2] : 0)
   }
 
-  console.log('none')
   return 0
 }

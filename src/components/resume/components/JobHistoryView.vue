@@ -84,6 +84,7 @@ export default {
 }
 
 .job-details-tag {
-  border: 1px solid orange;
+  border: 1px solid var(--v-accent-base);
+  max-height: 2.1em;
 }
 </style>
