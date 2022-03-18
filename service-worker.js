@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.ca8f99d5fb96ea56677009c51035bdd6.js"
+  "/precache-manifest.effa894955b417e697035d08e2a7787d.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "brandon-resume"});
