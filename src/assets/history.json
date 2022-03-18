@@ -104,7 +104,6 @@
     "end": "2017",
     "description": "Clear up any questions the team have, minimize issues that result in lost velocity, provide technical leadership",
     "requirements": [
-      "HCI TV - Hosptial room Android TV provider - Java/Android"
     ],
     "highlights": [
       "TCC - Create an automated report from multiple sources to identify discrepancies in sales, rebates, and inventory resulting in quicker reconciliation and reduced man hours. - PHP",

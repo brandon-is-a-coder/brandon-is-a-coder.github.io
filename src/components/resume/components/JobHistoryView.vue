@@ -2,7 +2,7 @@
   <v-container class="job-history-view d-flex">
     <v-container class="job-listings d-flex flex-column">
       <div v-for="job in GET_JOBS" :key="job.org" class="job-listings-item py-2">
-        <span class="font-weight-bold">{{ job.org }}</span>
+        <span class="font-weight-bolder">{{ job.org }}</span>
         <div class="">
           {{ job.start }} - {{ job.end }}
         </div>

@@ -31,14 +31,18 @@
     </div>
 
     <div :hidden="!isExpanded" class="job-not-condensed">
-
-      <span class="job-history-item-highlights-header mx-1">Highlights: <br/></span>
+      <span class="job-history-item-requirements-header list-header mx-1">Requirements:</span><br/>
+      <div class="job-history-item-requirements px-2">
+        <div v-for="(requirement, i) in data.details.requirements" :key="i" class="job-history-item-requirement ma-2">
+          {{ requirement }}
+        </div>
+      </div>
+      <span class="job-history-item-highlights-header list-header mx-1">Highlights:</span><br/>
       <div class="job-history-item-highlights px-2">
         <div v-for="(highlight, i) in data.details.highlights" :key="i" class="job-history-item-highlight ma-2">
           {{ highlight }}
         </div>
       </div>
-
     </div>
   </v-sheet>
 </template>
@@ -96,6 +100,7 @@ export default Vue.extend({
   max-width: 100%;
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
+  color: var(--v-font-base)
 }
 
 .job-history-item::-webkit-scrollbar {
@@ -117,11 +122,11 @@ export default Vue.extend({
 .job-history-item-expanded {
 }
 .job-history-item-org {
-  color: var(--v-accent-base);
+  color: var(--v-accent-lighten1);
 }
 .job-history-item-role {
   background-color: var(--v-secondary-base);
-  color: var(--v-accent-base)
+  color: var(--v-accent-lighten1);
 }
 .job-history-action.v-icon {
   -webkit-text-stroke: 0 var(--v-accent-base);
@@ -131,5 +136,8 @@ export default Vue.extend({
 .job-history-action.v-icon.muted {
   -webkit-text-stroke: 0 var(--v-error-lighten2);
   -webkit-text-fill-color: var(--v-error-lighten2);
+}
+.list-header {
+  font-weight: bolder;
 }
 </style>

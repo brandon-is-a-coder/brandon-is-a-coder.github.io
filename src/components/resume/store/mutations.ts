@@ -78,6 +78,16 @@ function toggleItemsExpandAllWithTag (jobHistory: JobHistory[], tag: string) {
       if (!value.visibility.includes(VisibilityOptions.EXPANDED)) {
         value.visibility.push(VisibilityOptions.EXPANDED)
       }
+      // Unhide items
+      if (value.visibility.includes(VisibilityOptions.HIDDEN)) {
+        value.visibility.splice(
+          value.visibility.indexOf(VisibilityOptions.HIDDEN), 1
+        )
+      }
+
+      // Doesn't include tag, hide it
+    } else if (!value.visibility.includes(VisibilityOptions.FAVORITE) && !value.visibility.includes(VisibilityOptions.HIDDEN)) {
+      value.visibility.push(VisibilityOptions.HIDDEN)
     }
   })
 }

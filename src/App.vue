@@ -66,16 +66,16 @@ export default Vue.extend({
 .router-link {
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--v-background-base)
+  color: var(--v-accent-base)
 }
 
 .router-link-exact-active {
-  color: var(--v-accent-base);
+  color: var(--v-accent-darken2);
   font-size: 1.2em;
 }
 
 .lightbulb.v-icon {
-  color: var(--v-background-base)
+  color: var(--v-accent-base)
 }
 
 .main-area {
