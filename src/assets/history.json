@@ -1,0 +1,218 @@
+[
+  {
+    "org": "Sogeti",
+    "role": "Senior Java Developer",
+    "start": "2019",
+    "end": "",
+    "description": "Develop Java Spring Boot applications to support analysis of flight sensor data",
+    "requirements": [],
+    "highlights": [
+      "Created microservice to bridge data back into the legacy system in order to decouple upgrade timeline for dependent applications. Merging data back into legacy system enables a graceful exit while dependant applications are migrated.",
+      "Troubleshoot discrepancies between legacy and current system, ensure all differences between legacy and current systems are mitigated, documented, and communicated.",
+      "Scale AWS ECS/Dynamo/Kinesis/Postgres resources to meet high throughput requirements of client.",
+      "Continued to support client development through COVID 19 transition to work from home, while continuing to deliver features on time through a multitude of challenges. This enabled the client to continue progress technically, improve security, and reduce costs."
+    ],
+    "tags": [
+      "java",
+      "springboot",
+      "aws"
+    ]
+  },
+  {
+    "org": "Sogeti",
+    "role": "Dev Ops",
+    "start": "2019",
+    "end": "",
+    "description": "Support applications that aide in the building, scanning, and monitoring of other applications",
+    "requirements": [
+      "Support building applications and making updates through tools including Jenkins and AWS Codebuild",
+      "Support storing build artifacts and making updates to Artifactory team account",
+      "Support security/quality by maintaining SonarQube instance used by team",
+      "Support scaling infrastructure to meet capacity needs",
+      "Support supplying data to a library of analytics that run both simple and machine learning algorithms",
+      "Algorithms verify engine performance to ensure all systems are running nominal range.",
+      "Mitigate issues identified by Twistlock Docker image vulnerability scans."
+    ],
+    "highlights": [
+      "Integrate AWS Cloud Watch into application by creating events to monitor key milestones in processing and create dashboard for other team members to monitor.",
+      "Troubleshoot processing bottlenecks including issues in corporate network, AWS throttling, and scalability in order to maximize performance and cost.",
+      "Improved code quality through administration of tools such as Twistlock and Sonarqube."
+    ],
+    "tags": [
+      "jenkins","aws","docker","devops","java"
+    ]
+  },
+  {
+    "org": "Sogeti",
+    "role": "Application Support Specialist",
+    "start": "2017",
+    "end": "2019",
+    "description": "Support applications critical to live flight data analytics",
+    "requirements": [
+      "Application maintaining automated reports across systems",
+      "Application for plotting and exploring large quantities of flight engine sensor data from data lake, enabling users to find new correlations in flight data identifying safety and cost saving data points",
+      "Application for analyzing company engine asset performance and suggest engine washing operations resulting in better fuel efficiency, reduced fuel consumption, and cost savings",
+      "Application for performing analytics against engine sensor and flight data for storage and alerting.",
+      "System maintaining cache of data for engine owners to authenticate then receive data "
+    ],
+    "highlights": [
+      "Support critical Java 1.7 RHEL application through legacy application support issues ensuring high availability for a sensitive application.",
+      "Develop scripts to automate common administrative tasks needed to maintain server saving many man hours of work and increased uptime.",
+      "Maintain 100% utilization to  client by consistently exceeding client needs."
+    ],
+    "tags": [
+      "aws","devops"
+    ]
+  },
+  {
+    "org": "CoStrategix",
+    "role": "Dev Ops",
+    "start": "2015",
+    "end": "2017",
+    "description": "Support applications that aide in the building, scanning, and monitoring of other applications",
+    "requirements": [
+      "Support security/quality by maintaining Zabbix instance used by team for application monitoring",
+      "Support applications by maintaining GrayLog central logging server and associated Elasticache instance",
+      "Perform security audits by performing network vulnerability scans against instances",
+      "Configure AWS resources for EC2 instances and generate base images with security tools installed"
+    ],
+    "highlights": [
+      "Created multi client monitoring solution for autoscaling servers including tools such as Zabbix, Graylog, and New Relic.",
+      "Mitigate outages and "
+    ],
+    "tags": [
+      "aws","devops"
+    ]
+  },
+  {
+    "org": "CoStrategix",
+    "role": "Project Management",
+    "start": "2015",
+    "end": "2017",
+    "description": "Manage coordination of clients with development process",
+    "requirements": [
+    ],
+    "highlights": [
+      "CS - Design/Develop updates to website that manages peer-reviewed medical videos for educational purposes."
+    ],
+    "tags": []
+  },
+  {
+    "org": "CoStrategix",
+    "role": "Lead Developer",
+    "start": "2015",
+    "end": "2017",
+    "description": "Clear up any questions the team have, minimize issues that result in lost velocity, provide technical leadership",
+    "requirements": [
+      "HCI TV - Hosptial room Android TV provider - Java/Android"
+    ],
+    "highlights": [
+      "TCC - Create an automated report from multiple sources to identify discrepancies in sales, rebates, and inventory resulting in quicker reconciliation and reduced man hours. - PHP",
+      "P3D - Develop an application that enables the control of 3D printers from a cloud platform. - NodeJS",
+      "BOT - Design/Implement a system that will automatically track items offered from suppliers and manage inventory for JIT ordering of items needed for client orders resulting in reduced overhead. - PHP",
+      "Create technical demonstrations for team to demonstrate new services, techniques, and options for customers."
+    ],
+    "tags": ["php","nodejs","education","developer"]
+  },
+  {
+    "org": "CoStrategix",
+    "role": "Developer",
+    "start": "2014",
+    "end": "2015",
+    "description": "Develop Spring Java applications",
+    "requirements": [],
+    "highlights": [
+      "Develop spring boot rest API used to validate subscription and customer access information for an Android application."
+    ],
+    "tags": ["java","springboot","developer"]
+  },
+  {
+    "org": "Air Force Research Lab",
+    "role": "Year at the Edge - Internship",
+    "start": "2011",
+    "end": "2013",
+    "description": "Develop prototype devices/projects that use mordern technology in creative ways",
+    "requirements": [
+      "Create Android application/device to aide first responders organize and triage patients during a mass casualty incident",
+      "Create application to ingest Twitter data with Geo tags to analyze city/statewide weather incidents"
+    ],
+    "highlights": [],
+    "tags": ["android","java","developer"]
+  },
+  {
+    "org": "Convergeys",
+    "role": "Java Developer - Internship",
+    "start": "2011-06-01",
+    "end": "2011-08-15",
+    "description": "Design and implement a logging wrapper to meet strict requirements around logging outputs",
+    "requirements": [],
+    "highlights": [],
+    "tags": ["developer","java"]
+  },
+  {
+    "org": "Miami University",
+    "role": "Student",
+    "start": "2011-01",
+    "end": "2014-08-01",
+    "description": "B.S. in Software Engineering",
+    "requirements": [],
+    "highlights": [],
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "org": "Army",
+    "role": "Firefighter",
+    "start": "2004-12-15",
+    "end": "2010-11-30",
+    "description": "Prepare for and mitigate emergencies.",
+    "requirements": [],
+    "highlights": [],
+    "tags": []
+  },
+  {
+    "org": "Army",
+    "role": "Soldier",
+    "start": "2004-06-09",
+    "end": "2010-11-30",
+    "description": "Do Soldier things.",
+    "requirements": [],
+    "highlights": [],
+    "tags": []
+  },
+  {
+    "org": "Hot Topic",
+    "role": "Sales",
+    "start": "2002-11",
+    "end": "2003-02",
+    "description": "Maintain store and assist customers.",
+    "requirements": [],
+    "highlights": [
+      "Quickly organize and refold the wall of band shirts (I still fold shirts like this to this day)"
+    ],
+    "tags": [
+      "sales"
+    ]
+  },
+  {
+    "org": "Donato's Pizza",
+    "role": "Store Employee",
+    "start": "2001",
+    "end": "2004",
+    "description": "Make pizza, clean store, assist customers",
+    "requirements": [
+      "Take customer order information over phone and input it into weird old computer. Would consistently lead in side order up sales.",
+      "Prepare food orders at both the sandwich station and pizza station.",
+      "Clean store and perform other daily tasks including opening and closing routines."
+    ],
+    "highlights": [
+      "Prepare a large pepperoni pizza, with over 100 pepperonis in under sixty seconds.",
+      "Fastest employee at converting cardboard templates into boxes, would frequently race others.",
+      "Created the best custom pizza from home leftovers."
+    ],
+    "tags": [
+      "pizza"
+    ]
+  }
+]
